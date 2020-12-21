@@ -1,0 +1,204 @@
+body{
+  background-image: linear-gradient(to right, #98acf8, #fdcfdf);
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+img{
+  max-width: 100%;
+}
+/************************* SEARCH PAGE ***************************/
+.time{
+  animation: fadein 4s;
+  font-size: 100px;
+  text-align: center;
+}
+
+.search-box{
+  width: 90%;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  animation: fadein 3s;
+}
+
+.search{
+  width: 99%;
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  animation: fadein 3s;
+}
+
+.header{
+  font-size: 60px;
+  animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+/************************ WEATHER PAGE ***************************/
+
+.box{
+  width: 90%;
+  max-width: 800px;
+  margin: 7% auto 0;
+  background-image: linear-gradient(to left, #949cdf, #a7c5eb);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+  "current location"
+  "icon weather";
+}
+
+.current{
+  grid-area: current;
+  position: relative;
+  bottom: 10%;
+}
+
+.time2{
+  font-size: 50px;
+  margin: 5% 5% 0;
+}
+
+.date{
+  margin:0 5% 0;
+  position: relative;
+  top: 10%;
+}
+
+.location-div{
+  grid-area: location;
+}
+
+.location{
+  margin: 5% 10%;
+}
+
+.weather{
+  grid-area: weather;
+}
+
+.temp{
+  font-size: 130px;
+  margin: 10% 5% 5%;
+}
+
+.icon-div{
+  grid-area: icon;
+  margin-top: 5%;
+  height: 200px;
+}
+
+.icon{
+  position: relative;
+  right: 5%;
+}
+
+.desc{
+  position: relative;
+  left: 35%;
+  bottom: 60%;
+}
+
+.search-again{
+  margin: 3% auto 0;
+  display: block;
+  background-image: linear-gradient(to left, #949cdf, #a7c5eb);
+}
+
+
+
+
+
+
+
+/***************************** MEDIA QUERY SECTION ****************************/
+
+@media (max-width:720px) {
+  .search-box{
+    font-size: 30px;
+  }
+  .box{
+    grid-template-columns: auto;
+    grid-template-areas:
+    "location"
+    "current"
+    "weather"
+    "icon";
+    text-align: center;
+  }
+  .desc{
+    position: relative;
+    bottom: 45%;
+    left:0;
+  }
+  .icon{
+    position: relative;
+    left: 0;
+    bottom: 35%;
+  }
+  .icon-div{
+    position: static;
+  }
+  .temp{
+    position: static;
+  }
+  .location{
+    position: static;
+  }
+  .time2{
+    position: static;
+  }
+  .current{
+    position: static;
+  }
+}
+
+@media (max-width:500px) {
+  .search-box{
+    font-size: 25px;
+  }
+  .time{
+    font-size: 80px;
+  }
+  .header{
+    font-size: 40px;
+  }
+}
+@media (max-width:430px) {
+  .search-box{
+    font-size: 20px;
+  }
+  .time{
+    font-size: 60px;
+  }
+  .temp{
+    font-size: 130px;
+  }
+}
+
+@media (max-width:350px) {
+  .search-box{
+    font-size: 15px;
+  }
+  .header{
+    font-size: 30px;
+  }
+  .temp{
+    font-size: 100px;
+  }
+  .desc{
+    font-size: 30px;
+  }
+}
