@@ -1,6 +1,6 @@
 # Weather App
 
-A weather web app that uses the OpenWeatherMap API to provide real-time information. You can enter cities or countries in the provided search box. You can access it by clicking <a href="https://weather-4.herokuapp.com/">here</a>.
+A weather web app that uses the OpenWeatherMap API to provide real-time information. You can enter cities or countries in the provided search box. You can access it by clicking <a href="https://sweather.herokuapp.com/">here</a>.
 
 ## How it works
 
